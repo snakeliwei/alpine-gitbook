@@ -8,7 +8,7 @@ RUN apk --update add nodejs \
 LABEL version="2.6.7"
 
 RUN npm install -g gitbook-cli && gitbook versions:install 2.6.7 && \
-    npm cache clear && \
+    npm cache clear
 
 
 WORKDIR /srv/gitbook
